@@ -1070,6 +1070,173 @@ section.why-call::before,.choose::before,.experience::before{background:radial-g
 }
 </style>
 
+
+<style>
+/* PREMIUM MOBILE HERO — visual card, tighter hierarchy, stronger CTA */
+@media (max-width: 768px){
+  nav{background:#081a3b!important}
+  nav .wrap{min-height:72px;padding:10px 18px!important}
+  .logo{font-family:'Inter',sans-serif!important;font-size:28px!important;font-weight:850!important;letter-spacing:-.035em!important;color:#fff!important}
+  .logo em{color:#8dc4ff!important}
+  .nav-call{width:52px!important;height:52px!important;min-height:52px!important;padding:0!important;border-radius:15px!important;background:linear-gradient(145deg,#2387f2,#0d5fca)!important;box-shadow:0 10px 24px rgba(15,105,216,.34)!important}
+
+  .hero{
+    padding:20px 0 28px!important;
+    background:
+      radial-gradient(circle at 92% 4%,rgba(51,143,255,.28),transparent 32%),
+      linear-gradient(155deg,#071a3d 0%,#0b3c7d 52%,#0b66c3 100%)!important;
+  }
+  .hero::before,.hero::after{display:none!important}
+  .hero .wrap{
+    display:flex!important;
+    flex-direction:column!important;
+    gap:0!important;
+    padding-inline:16px!important;
+    background:#fff!important;
+    border:1px solid rgba(255,255,255,.6)!important;
+    border-radius:24px!important;
+    overflow:hidden!important;
+    box-shadow:0 24px 60px rgba(0,10,34,.34)!important;
+  }
+  .hero-visual{
+    display:block!important;
+    order:1!important;
+    width:calc(100% + 32px)!important;
+    max-width:none!important;
+    margin:0 -16px!important;
+  }
+  .illo-card{
+    border-radius:0!important;
+    box-shadow:none!important;
+    transform:none!important;
+    background:#0b2e64!important;
+  }
+  .illo-card img{
+    width:100%!important;
+    height:170px!important;
+    object-fit:cover!important;
+    object-position:center 38%!important;
+    filter:saturate(.95) contrast(1.03)!important;
+  }
+  .illo-card::after{
+    content:"Fast local HVAC help";
+    position:absolute;
+    left:16px;
+    bottom:14px;
+    color:#fff;
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:.05em;
+    text-transform:uppercase;
+    background:rgba(7,26,61,.82);
+    border:1px solid rgba(255,255,255,.24);
+    border-radius:999px;
+    padding:7px 11px;
+    backdrop-filter:blur(8px);
+  }
+  .illo-card{position:relative!important}
+  .illo-caption{display:none!important}
+
+  .hero-copy{
+    order:2!important;
+    padding:22px 6px 24px!important;
+    color:#0b214d!important;
+  }
+  .eyebrow{
+    display:inline-flex!important;
+    width:auto!important;
+    max-width:100%!important;
+    margin:0 0 13px!important;
+    padding:7px 10px!important;
+    border-radius:999px!important;
+    background:#eaf4ff!important;
+    border:1px solid #cfe4fb!important;
+    color:#0d5fbd!important;
+    font-family:'IBM Plex Mono',monospace!important;
+    font-size:9.5px!important;
+    font-weight:800!important;
+    letter-spacing:.045em!important;
+    white-space:normal!important;
+  }
+  .eyebrow::before{background:#1683ed!important;box-shadow:0 0 0 4px rgba(22,131,237,.13)!important}
+  .hero h1{
+    font-family:'Inter',sans-serif!important;
+    color:#071a3d!important;
+    font-size:clamp(31px,8.6vw,39px)!important;
+    line-height:1.02!important;
+    font-weight:900!important;
+    letter-spacing:-.045em!important;
+    margin:0 0 14px!important;
+    max-width:100%!important;
+    text-wrap:balance!important;
+  }
+  .hero h1 br{display:none!important}
+  .hero p.sub{
+    color:#526681!important;
+    font-size:15px!important;
+    line-height:1.48!important;
+    margin:0 0 18px!important;
+    max-width:100%!important;
+  }
+  .hero-cta-block{display:block!important;margin:0 0 15px!important}
+  .hero-cta-block .btn{
+    width:100%!important;
+    min-height:58px!important;
+    padding:15px 16px!important;
+    border-radius:14px!important;
+    background:linear-gradient(135deg,#ff8a19,#e95b12)!important;
+    color:#fff!important;
+    font-size:18px!important;
+    font-weight:900!important;
+    box-shadow:0 13px 28px rgba(233,91,18,.3)!important;
+  }
+  .hero-cta-block .btn svg{width:23px!important;height:23px!important}
+  .disclosure-line{display:none!important}
+  .trust-row{
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    gap:8px!important;
+    margin:0!important;
+  }
+  .trust-row .item{
+    min-height:42px!important;
+    padding:9px 10px!important;
+    border:1px solid #dce8f6!important;
+    border-radius:11px!important;
+    background:#f7fbff!important;
+    color:#17345f!important;
+    font-size:11.5px!important;
+    font-weight:750!important;
+    line-height:1.2!important;
+    box-shadow:none!important;
+  }
+  .trust-row .item:nth-child(3){display:none!important}
+  .trust-row .item svg{width:15px!important;height:15px!important;color:#1673d2!important}
+
+  .overview-band{padding-top:26px!important;background:#eef5fc!important}
+  .overview-band .wrap{padding-top:0!important}
+  .overview-card{margin-top:0!important;border-radius:20px!important;box-shadow:0 14px 34px rgba(15,45,85,.1)!important}
+
+  .sticky-call{padding:9px 12px calc(9px + env(safe-area-inset-bottom))!important;background:rgba(6,20,47,.97)!important}
+  .sticky-call a{
+    min-height:56px!important;
+    background:linear-gradient(135deg,#ff8a19,#e95b12)!important;
+    color:#fff!important;
+    font-size:16px!important;
+    border-radius:14px!important;
+    box-shadow:0 9px 24px rgba(233,91,18,.35)!important;
+    animation:none!important;
+  }
+}
+
+@media (max-width: 380px){
+  .hero h1{font-size:30px!important}
+  .hero p.sub{font-size:14px!important}
+  .trust-row{grid-template-columns:1fr!important}
+  .trust-row .item:nth-child(2){display:none!important}
+}
+</style>
+
 </head>
 <body>
 
@@ -1093,7 +1260,7 @@ section.why-call::before,.choose::before,.experience::before{background:radial-g
   <div class="wrap">
     <div class="hero-copy">
       <span class="eyebrow">Licensed HVAC Technicians · Local Dispatch</span>
-      <h1>Same-Day HVAC Repair and Installation in Your Area.<br> Technicians Available Now.</h1>
+      <h1>Same-Day HVAC Repair and Installation in Your Area. Technicians Available Now.</h1>
       <p class="sub">Get connected with a licensed HVAC professional serving your area. Same-day appointments may be available for repair, replacement, and maintenance calls.</p>
       <div class="hero-cta-block">
         <a href="tel:+18335138607" data-cta-id="hero_primary" class="btn btn-copper">
