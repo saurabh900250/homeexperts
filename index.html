@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AC or Heat Not Working? Call Now — Home Experts HVAC</title>
+<title>Same-Day HVAC Repair and Installation in Your Area — Home Experts HVAC</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
@@ -409,6 +409,532 @@ footer{background:var(--charcoal);color:#92a2bc;padding:44px 0 112px;font-size:1
   .disclosure-line{font-size:11px}
 }
 
+
+
+/* =========================================================
+   WHITE + BLUE HVAC CRO THEME OVERRIDES
+   Added as final CSS layer. Existing layout, tracking,
+   attributes, content and JavaScript remain unchanged.
+========================================================= */
+:root{
+  --ink:#0B1F4D;
+  --charcoal:#07152F;
+  --porcelain:#F4F8FC;
+  --white:#FFFFFF;
+  --copper:#0D5CBD;
+  --copper-light:#3B82D0;
+  --glacier:#174C8F;
+  --glacier-light:#6DA7E5;
+  --muted:#52657D;
+  --line:#D8E4F0;
+  --amber:#B7791F;
+  --green:#1E7A4C;
+}
+
+body{
+  background:#F4F8FC;
+  color:var(--ink);
+}
+
+nav{
+  background:rgba(255,255,255,.96);
+  border-bottom:1px solid #D8E4F0;
+  box-shadow:0 4px 18px rgba(11,31,77,.06);
+}
+
+.logo em,
+.phone-link,
+.kicker,
+.eyebrow,
+.symptom-card h4 svg,
+.overview-col li svg,
+.badge-icon svg,
+.iaq-card .ic svg,
+.faq-q svg,
+.cost-card .num,
+.gloss-item dt{
+  color:#0D5CBD;
+}
+
+.eyebrow::before{
+  background:#0D5CBD;
+  box-shadow:0 0 0 6px rgba(13,92,189,.10);
+}
+
+.btn-copper,
+.nav-call,
+.sticky-call a{
+  background:linear-gradient(135deg,#0D5CBD,#174C8F);
+  color:#fff;
+  box-shadow:0 10px 28px rgba(13,92,189,.28);
+}
+
+.btn-copper:hover,
+.nav-call:hover,
+.sticky-call a:hover{
+  background:linear-gradient(135deg,#0A4C9F,#103E78);
+  box-shadow:0 14px 32px rgba(13,92,189,.34);
+}
+
+.hero{
+  background:
+    radial-gradient(circle at 88% 12%,rgba(91,159,225,.20),transparent 34%),
+    linear-gradient(135deg,#FFFFFF 0%,#F5FAFF 54%,#E7F2FD 100%);
+  border-bottom:1px solid #D8E4F0;
+}
+
+.hero::before{
+  opacity:.10;
+  filter:saturate(.65) hue-rotate(160deg);
+}
+
+.hero h1{color:#0B1F4D;}
+.hero p.sub,.disclosure-line{color:#52657D;}
+
+.illo-card{
+  background:linear-gradient(160deg,#07152F,#0B1F4D);
+  border:1px solid rgba(109,167,229,.24);
+  box-shadow:0 26px 54px -20px rgba(11,31,77,.48);
+}
+
+.illo-caption{
+  color:#C8DBF2;
+  border-top:1px solid rgba(255,255,255,.10);
+}
+
+.trust-row .item{
+  background:#fff;
+  color:#0B1F4D;
+  border:1px solid #D8E4F0;
+  border-radius:10px;
+  padding:9px 12px;
+  box-shadow:0 5px 16px rgba(11,31,77,.05);
+}
+
+.trust-row svg{color:#0D5CBD;}
+
+.overview-band{
+  background:linear-gradient(180deg,#0B1F4D 0%,#0B1F4D 90px,#EDF5FC 90px,#EDF5FC 100%);
+}
+
+.overview-card{
+  background:#fff;
+  border:1px solid #D8E4F0;
+  box-shadow:0 20px 48px -24px rgba(11,31,77,.28);
+}
+
+.overview-icon,
+.system-card h4 .ic{
+  background:linear-gradient(135deg,#0D5CBD,#174C8F);
+}
+
+.toc,
+.selector,
+.compare,
+.seasonal,
+.system-types,
+.iaq,
+.financing,
+.glossary,
+.service-area,
+.emergency,
+.badges,
+.field{
+  background:#fff;
+}
+
+.toc-inner a{
+  background:#F1F7FD;
+  border-color:#D8E4F0;
+  color:#0B1F4D;
+}
+
+.toc-inner a:hover,
+.toc-inner a:focus-visible{
+  background:#0D5CBD;
+  border-color:#0D5CBD;
+  color:#fff;
+}
+
+.chip{
+  background:#F4F8FC;
+  border-color:#D8E4F0;
+  color:#0B1F4D;
+}
+
+.chip:hover{
+  border-color:#6DA7E5;
+  background:#EAF4FE;
+  transform:translateY(-2px);
+}
+
+.chip.active{
+  background:#0D5CBD;
+  border-color:#0D5CBD;
+  color:#fff;
+  box-shadow:0 8px 20px rgba(13,92,189,.20);
+}
+
+.selector-response,
+.zip-result{
+  background:#F4F9FF;
+  border-color:#AFCDEA;
+}
+
+.symptoms,
+.cost-section,
+.efficiency,
+.thermostat,
+.warranty,
+.faq,
+.brands{
+  background:#F4F8FC;
+}
+
+.symptom-card,
+.cost-card,
+.system-card,
+.iaq-card,
+.therm-card,
+.finance-card,
+.faq-item,
+.warranty-box,
+.brand-chip,
+.badge-icon{
+  background:#fff;
+  border-color:#D8E4F0;
+  box-shadow:0 8px 24px rgba(11,31,77,.055);
+}
+
+.symptom-card:hover,
+.cost-card:hover,
+.system-card:hover,
+.iaq-card:hover,
+.therm-card:hover,
+.finance-card:hover,
+.faq-item:hover,
+.brand-chip:hover{
+  transform:translateY(-4px);
+  border-color:#AFCDEA;
+  box-shadow:0 14px 32px rgba(11,31,77,.09);
+}
+
+.symptom-card,
+.cost-card,
+.system-card,
+.iaq-card,
+.therm-card,
+.finance-card,
+.faq-item,
+.brand-chip{
+  transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;
+}
+
+section.why-call,
+.choose,
+.experience{
+  background:linear-gradient(135deg,#07152F,#0B2D62);
+}
+
+.why-call .kicker,
+.choose .kicker,
+.experience .kicker,
+.step-num,
+.choose-item svg{
+  color:#78B5F0;
+}
+
+.step-card,
+.experience-card{
+  background:rgba(255,255,255,.065);
+  border-color:rgba(157,199,240,.18);
+}
+
+.compare-table th{
+  background:#0B1F4D;
+}
+
+.compare-table tr:nth-child(even) td{
+  background:#F3F8FD;
+}
+
+.seasonal-card.summer{
+  background:linear-gradient(135deg,#1769BE,#0B3D7A);
+}
+
+.seasonal-card.winter{
+  background:linear-gradient(135deg,#0B2D62,#07152F);
+}
+
+.eff-badge{
+  background:#0D5CBD;
+}
+
+.emergency-box{
+  background:#EDF6FF;
+  border-color:#B8D6F2;
+}
+
+.emergency-box svg{color:#0D5CBD;}
+
+.final{
+  background:
+    radial-gradient(circle at 85% 20%,rgba(255,255,255,.13),transparent 32%),
+    linear-gradient(135deg,#0D5CBD,#0B2D62);
+}
+
+.final .btn-copper{
+  background:#fff;
+  color:#0B1F4D;
+  box-shadow:0 12px 30px rgba(0,0,0,.22);
+}
+
+.final .btn-copper:hover{
+  background:#EDF6FF;
+  color:#0B1F4D;
+}
+
+footer{
+  background:#07152F;
+  color:#8FA7C2;
+}
+
+.sticky-call{
+  background:rgba(255,255,255,.98);
+  border-top:1px solid #D8E4F0;
+  box-shadow:0 -8px 26px rgba(11,31,77,.16);
+}
+
+.zip-form button{
+  background:#0D5CBD;
+  color:#fff;
+  min-height:48px;
+}
+
+.zip-form button:hover{
+  background:#0A4C9F;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible{
+  outline:3px solid rgba(13,92,189,.28);
+  outline-offset:3px;
+}
+
+@media(max-width:768px){
+  .trust-row .item{
+    padding:7px 0;
+    border:0;
+    background:transparent;
+    box-shadow:none;
+  }
+
+  .sticky-call{
+    padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  }
+}
+
+
+
+/* =========================================================
+   PREMIUM BLUE HERO — FINAL OVERRIDE
+   Pure blue background, white conversion copy, clean image,
+   no bright overlay across the technician's face.
+========================================================= */
+:root{
+  --ink:#08214F;
+  --charcoal:#061633;
+  --navy:#082B67;
+  --porcelain:#F3F7FC;
+  --surface:#FFFFFF;
+  --surface-2:#EAF2FB;
+  --white:#FFFFFF;
+  --copper:#1473E6;
+  --copper-dark:#0B56B3;
+  --copper-light:#8AC4FF;
+  --amber:#55B6FF;
+  --glacier:#0D5FC4;
+  --glacier-light:#7EBBFA;
+  --muted:#5B6E88;
+  --line:#D6E3F1;
+}
+
+body::selection{background:rgba(126,187,250,.32)}
+
+nav{
+  background:rgba(6,22,51,.97);
+  border-bottom:1px solid rgba(255,255,255,.11);
+  box-shadow:0 8px 28px rgba(4,18,45,.22);
+}
+.logo{color:#fff}
+.logo em{color:#8AC4FF}
+.nav-links{color:#D6E6FA}
+.nav-links a:hover{color:#fff}
+
+.btn-copper,
+.nav-call,
+.sticky-call a{
+  background:linear-gradient(135deg,#1780F5 0%,#0D5FC4 100%);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.18);
+  box-shadow:0 14px 34px rgba(2,34,83,.34),inset 0 1px 0 rgba(255,255,255,.24);
+}
+.btn-copper:hover,
+.nav-call:hover,
+.sticky-call a:hover{
+  background:linear-gradient(135deg,#2490FF 0%,#0A50A7 100%);
+  box-shadow:0 18px 42px rgba(2,34,83,.42),inset 0 1px 0 rgba(255,255,255,.26);
+}
+
+.hero{
+  min-height:690px;
+  display:flex;
+  align-items:center;
+  padding:clamp(54px,7vw,92px) 0;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 92% 7%,rgba(87,177,255,.30),transparent 27%),
+    radial-gradient(circle at 12% 92%,rgba(61,144,235,.22),transparent 33%),
+    linear-gradient(125deg,#061D48 0%,#0A3C82 48%,#0B64C9 100%);
+  border-bottom:1px solid rgba(255,255,255,.12);
+  color:#fff;
+}
+
+/* Remove the former photographic/light overlay completely. */
+.hero::before{display:none!important;background:none!important;opacity:0!important;filter:none!important}
+.hero::after{
+  content:"";
+  position:absolute;
+  width:540px;
+  height:540px;
+  right:-265px;
+  top:-310px;
+  border-radius:50%;
+  background:rgba(255,255,255,.08);
+  filter:none;
+  pointer-events:none;
+}
+
+.hero .wrap{
+  grid-template-columns:minmax(0,1fr) minmax(400px,.88fr);
+  gap:clamp(42px,6vw,80px);
+}
+.hero-copy{max-width:700px}
+
+.eyebrow{
+  color:#FFFFFF;
+  background:rgba(255,255,255,.10);
+  border:1px solid rgba(255,255,255,.22);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
+}
+.eyebrow::before{
+  background:#83C7FF;
+  box-shadow:0 0 0 6px rgba(131,199,255,.14);
+}
+.hero h1{
+  color:#FFFFFF!important;
+  text-shadow:0 5px 28px rgba(0,13,42,.30);
+  max-width:680px;
+}
+.hero p.sub{
+  color:#DCEBFC!important;
+  max-width:650px;
+}
+.disclosure-line{color:#C6DCF5!important}
+.disclosure-line a{color:#FFFFFF!important}
+
+.hero-cta-block .btn{
+  min-width:360px;
+  background:linear-gradient(135deg,#FFFFFF 0%,#EAF5FF 100%);
+  color:#08367A;
+  border:1px solid rgba(255,255,255,.9);
+  box-shadow:0 18px 42px rgba(0,16,48,.30),inset 0 1px 0 #fff;
+  animation:blueHeroCta 2.6s ease-in-out infinite;
+}
+.hero-cta-block .btn:hover{
+  background:#FFFFFF;
+  color:#062B63;
+  box-shadow:0 22px 48px rgba(0,16,48,.38),0 0 0 5px rgba(255,255,255,.12);
+}
+@keyframes blueHeroCta{
+  0%,100%{box-shadow:0 18px 42px rgba(0,16,48,.30),0 0 0 0 rgba(255,255,255,0)}
+  50%{box-shadow:0 22px 50px rgba(0,16,48,.40),0 0 0 8px rgba(255,255,255,.08)}
+}
+
+.trust-row .item{
+  color:#FFFFFF;
+  background:rgba(255,255,255,.10);
+  border:1px solid rgba(255,255,255,.20);
+  box-shadow:none;
+  backdrop-filter:blur(8px);
+}
+.trust-row svg{color:#8FD0FF}
+
+/* Clean image card: no glare, no white wash, face stays visible. */
+.illo-card{
+  position:relative;
+  background:#061633;
+  border:1px solid rgba(255,255,255,.24);
+  border-radius:26px;
+  overflow:hidden;
+  transform:none;
+  box-shadow:0 30px 74px rgba(0,12,39,.42);
+}
+.illo-card::before,
+.illo-card::after{display:none!important;content:none!important}
+.illo-card:hover{transform:translateY(-5px);box-shadow:0 38px 86px rgba(0,12,39,.50)}
+.illo-card img{
+  width:100%!important;
+  height:430px!important;
+  display:block;
+  object-fit:cover!important;
+  object-position:center 42%!important;
+  filter:contrast(1.04) saturate(.94) brightness(.98)!important;
+  opacity:1!important;
+  mix-blend-mode:normal!important;
+}
+.illo-caption{
+  background:#061D48;
+  color:#DCEBFC;
+  border-top:1px solid rgba(255,255,255,.12);
+  padding:18px 22px;
+}
+
+/* Keep the rest of the website consistently white and blue. */
+.overview-band{background:linear-gradient(180deg,#082B67 0,#082B67 86px,#EDF4FB 86px)}
+.overview-icon,.system-card h4 .ic{background:linear-gradient(145deg,#0B64C9,#082B67)}
+.kicker,.phone-link,.symptom-card h4 svg,.overview-col li svg,.badge-icon svg,.iaq-card .ic svg,.faq-q svg,.cost-card .num,.gloss-item dt{color:#0B64C9}
+.chip.active,.zip-form button,.compare-table th,.eff-badge{background:linear-gradient(135deg,#0B64C9,#082B67)}
+.selector-response{border-left-color:#1473E6}
+.toc-inner a:hover,.toc-inner a:focus-visible{background:#0B64C9;border-color:#0B64C9}
+section.why-call,.choose,.experience{background:linear-gradient(135deg,#061633,#082B67)}
+section.why-call::before,.choose::before,.experience::before{background:radial-gradient(circle at 92% 0,rgba(87,177,255,.20),transparent 33%)}
+.final{background:linear-gradient(135deg,#082B67,#0B64C9)}
+.final .btn-copper{background:#fff;color:#08367A;border-color:#fff}
+.sticky-call{background:rgba(6,22,51,.98);border-top:1px solid rgba(255,255,255,.14)}
+
+@media(max-width:960px){
+  .hero{min-height:auto}
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-visual{max-width:620px;width:100%;margin:8px auto 0}
+  .illo-card img{height:390px!important;object-position:center 38%!important}
+}
+
+@media(max-width:680px){
+  .hero{
+    padding:34px 0 44px;
+    background:
+      radial-gradient(circle at 95% 3%,rgba(87,177,255,.25),transparent 28%),
+      linear-gradient(145deg,#061D48 0%,#093B7E 56%,#0B64C9 100%);
+  }
+  .hero h1{color:#fff!important}
+  .hero p.sub{color:#DCEBFC!important}
+  .hero-cta-block .btn{min-width:0;width:100%;color:#08367A}
+  .trust-row .item{color:#fff;background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.18)}
+  .hero-visual{display:none}
+}
+
 </style>
 
 </head>
@@ -434,7 +960,7 @@ footer{background:var(--charcoal);color:#92a2bc;padding:44px 0 112px;font-size:1
   <div class="wrap">
     <div class="hero-copy">
       <span class="eyebrow">Licensed HVAC Technicians · Local Dispatch</span>
-      <h1>AC or Heat Not Working?<br>Call Now for Fast Local HVAC Help.</h1>
+      <h1>Same-Day HVAC Repair and Installation in Your Area.<br>Technicians Available Now.</h1>
       <p class="sub">Get connected with a licensed HVAC professional serving your area. Same-day appointments may be available for repair, replacement, and maintenance calls.</p>
       <div class="hero-cta-block">
         <a href="tel:+18335138607" data-cta-id="hero_primary" class="btn btn-copper">
@@ -1204,24 +1730,71 @@ document.querySelectorAll('.faq-q').forEach(btn=>{
 });
 
 /* ============================================================
-   CALL CLICK TRACKING
-   Fires on every tel: link. Wire into GA4 / Google Ads / Meta CAPI
-   by uncommenting the relevant push below. data-cta-id identifies
-   click position for attribution (hero_primary, sticky_bar, etc).
-   If using CallRail/Ringba DNI, let their script own the tel: href
-   swap — this listener only reports the click event, it does not
-   set the number.
+   META DATASET / PIXEL SETUP
+   Paste your Dataset/Pixel ID into META_DATASET_ID below. It is the ID
+   shown in Meta Events Manager. This is the only value required
+   for browser-side Meta tracking in this file.
+
+   IMPORTANT:
+   - Page visits are tracked as PageView.
+   - Phone-button taps are tracked as Contact.
+   - A click is NOT recorded as a completed-call Lead.
+   - Completed/qualified call Lead tracking can be connected later
+     through Ringba or CallRail + Meta Conversions API.
 =============================================================== */
-document.querySelectorAll('a[href^="tel:"]').forEach(function(el){
+const META_DATASET_ID = ''; // Paste your Meta Dataset/Pixel ID between the quotes
+
+(function(f,b,e,v,n,t,s){
+  if(f.fbq)return;
+  n=f.fbq=function(){n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;
+  n.push=n;
+  n.loaded=true;
+  n.version='2.0';
+  n.queue=[];
+  t=b.createElement(e);
+  t.async=true;
+  t.src=v;
+  s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s);
+})(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+if (META_DATASET_ID.trim()) {
+  fbq('init', META_DATASET_ID);
+  fbq('track', 'PageView');
+}
+
+/* ============================================================
+   PHONE CLICK TRACKING
+   Tracks all six existing tel:+18335138607 CTA positions while
+   preserving each original data-cta-id value.
+=============================================================== */
+window.dataLayer = window.dataLayer || [];
+
+document.querySelectorAll('a[href="tel:+18335138607"]').forEach(function(el){
   el.addEventListener('click', function(){
-    var ctaId = el.dataset.ctaId || 'unspecified';
-    if (window.dataLayer) {
-      dataLayer.push({ event: 'call_click', cta_id: ctaId, page_path: window.location.pathname });
+    var ctaId = this.getAttribute('data-cta-id') || 'unspecified';
+
+    window.dataLayer.push({
+      event: 'phone_click',
+      phone_number: '+18335138607',
+      cta_id: ctaId,
+      page_path: window.location.pathname
+    });
+
+    if (typeof window.fbq === 'function' && META_DATASET_ID.trim()) {
+      fbq('track', 'Contact', {
+        contact_method: 'phone',
+        phone_number: '+18335138607',
+        cta_id: ctaId
+      });
     }
-    if (window.gtag) {
-      gtag('event', 'call_click', { cta_id: ctaId });
-      // Google Ads call-click conversion — replace AW-XXXXXXX/XXXXXXXXXXX with real IDs:
-      // gtag('event', 'conversion', {'send_to': 'AW-XXXXXXX/XXXXXXXXXXX'});
+
+    if (typeof window.gtag === 'function') {
+      gtag('event', 'phone_click', {
+        phone_number: '+18335138607',
+        cta_id: ctaId
+      });
     }
   });
 });
