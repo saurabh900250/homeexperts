@@ -937,6 +937,139 @@ section.why-call::before,.choose::before,.experience::before{background:radial-g
 
 </style>
 
+
+<style id="mobile-cro-alignment-fix">
+/* =========================================================
+   MOBILE CRO ALIGNMENT FIX — compact, readable, call-first
+   ========================================================= */
+@media (max-width: 680px) {
+  html, body { max-width: 100%; overflow-x: hidden; }
+  body { padding-bottom: 88px; }
+
+  .wrap { width: 100%; padding-left: 20px; padding-right: 20px; }
+
+  /* Compact navigation */
+  nav .wrap { min-height: 72px; padding-top: 10px; padding-bottom: 10px; }
+  .logo { font-family: 'Inter', sans-serif; font-size: 22px; line-height: 1; letter-spacing: -.02em; }
+  .nav-call { width: 50px !important; height: 50px; min-height: 50px; padding: 0 !important; border-radius: 14px; }
+  .nav-call .txt { display: none !important; }
+  .nav-call svg { width: 22px; height: 22px; }
+
+  /* Hero: only core conversion content above the fold */
+  .hero { min-height: 0; padding: 30px 0 34px; }
+  .hero .wrap { display: block; }
+  .hero-copy { width: 100%; max-width: 100%; }
+  .hero-visual { display: none !important; }
+  .eyebrow { display: none !important; }
+
+  .hero h1 {
+    max-width: 100%;
+    margin: 0 0 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(34px, 9.2vw, 42px);
+    font-weight: 800;
+    line-height: 1.04;
+    letter-spacing: -.045em;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
+    text-wrap: balance;
+  }
+  .hero h1 br { display: none; }
+
+  .hero p.sub {
+    max-width: 100%;
+    margin: 0 0 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #DCEBFC !important;
+  }
+
+  .hero-cta-block { width: 100%; margin: 0; }
+  .hero-cta-block .btn {
+    width: 100%;
+    min-width: 0;
+    min-height: 58px;
+    padding: 15px 16px;
+    border-radius: 14px;
+    font-size: 17px;
+    line-height: 1.2;
+    white-space: nowrap;
+    background: #E2601F;
+    color: #fff;
+    border-color: #E2601F;
+    box-shadow: 0 14px 30px rgba(226,96,31,.34);
+    animation: none;
+  }
+  .hero-cta-block .btn svg { width: 21px; height: 21px; }
+  .hero-cta-block .btn:active { transform: scale(.985); }
+
+  /* Secondary legal/details content does not compete above fold */
+  .hero .disclosure-line { display: none !important; }
+  .hero .trust-row { margin-top: 14px; display: block; }
+  .hero .trust-row .item {
+    display: none;
+    min-height: 0;
+    width: auto;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    font-size: 13px;
+    line-height: 1.35;
+  }
+  .hero .trust-row .item:first-child { display: flex; }
+  .hero .trust-row svg { width: 15px; height: 15px; }
+
+  /* Prevent the services card from clipping beneath the sticky CTA */
+  .overview-band { padding-top: 0; background: #EEF4FB; }
+  .overview-band .wrap { padding-top: 24px; padding-bottom: 32px; }
+  .overview-card {
+    width: 100%;
+    grid-template-columns: 1fr !important;
+    gap: 24px;
+    padding: 24px 20px !important;
+    border-radius: 18px;
+    overflow: visible;
+  }
+  .overview-col { gap: 14px; align-items: flex-start; }
+  .overview-icon { width: 50px; height: 50px; }
+  .overview-icon svg { width: 24px !important; height: 24px !important; }
+  .overview-col h3 { font-family: 'Inter', sans-serif; font-size: 21px; margin-bottom: 10px; }
+  .overview-col li { font-size: 14px; line-height: 1.4; padding: 5px 0; }
+  .overview-divider { display: none; }
+
+  /* Sticky CTA: compact, high contrast, safe-area aware */
+  .sticky-call {
+    padding: 9px 12px calc(9px + env(safe-area-inset-bottom));
+    background: rgba(6,22,51,.98);
+  }
+  .sticky-call a {
+    width: 100%;
+    min-height: 56px;
+    padding: 13px 14px;
+    border-radius: 14px;
+    background: #E2601F;
+    border-color: #E2601F;
+    font-size: 16px;
+    white-space: nowrap;
+    box-shadow: 0 10px 26px rgba(226,96,31,.34);
+  }
+
+  /* General mobile section readability */
+  section:not(.hero):not(.overview-band) { scroll-margin-top: 78px; }
+  .section-head h2 { font-family: 'Inter', sans-serif; line-height: 1.15; }
+}
+
+@media (max-width: 390px) {
+  .wrap { padding-left: 16px; padding-right: 16px; }
+  .hero h1 { font-size: 32px; }
+  .hero p.sub { font-size: 15px; }
+  .hero-cta-block .btn, .sticky-call a { font-size: 15px; }
+}
+</style>
+
 </head>
 <body>
 
@@ -960,7 +1093,7 @@ section.why-call::before,.choose::before,.experience::before{background:radial-g
   <div class="wrap">
     <div class="hero-copy">
       <span class="eyebrow">Licensed HVAC Technicians · Local Dispatch</span>
-      <h1>Same-Day HVAC Repair and Installation in Your Area.<br>Technicians Available Now.</h1>
+      <h1>Same-Day HVAC Repair and Installation in Your Area.<br> Technicians Available Now.</h1>
       <p class="sub">Get connected with a licensed HVAC professional serving your area. Same-day appointments may be available for repair, replacement, and maintenance calls.</p>
       <div class="hero-cta-block">
         <a href="tel:+18335138607" data-cta-id="hero_primary" class="btn btn-copper">
